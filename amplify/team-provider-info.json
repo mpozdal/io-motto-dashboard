@@ -1,0 +1,23 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-motto-staging-212314-authRole",
+      "UnauthRoleArn": "arn:aws:iam::072621353534:role/amplify-motto-staging-212314-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::072621353534:role/amplify-motto-staging-212314-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-motto-staging-212314-deployment",
+      "UnauthRoleName": "amplify-motto-staging-212314-unauthRole",
+      "StackName": "amplify-motto-staging-212314",
+      "StackId": "arn:aws:cloudformation:eu-north-1:072621353534:stack/amplify-motto-staging-212314/adb64d00-8b0f-11ee-9c83-0a39a43a540e",
+      "AmplifyAppId": "d2yy5uwefstf45"
+    },
+    "categories": {
+      "api": {
+        "motto": {}
+      },
+      "auth": {
+        "motto": {}
+      }
+    }
+  }
+}

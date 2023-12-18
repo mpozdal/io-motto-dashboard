@@ -1,0 +1,6 @@
+{
+  "AppSyncApiName": "motto",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2023-11-26T14:34:13.235Z"
+}

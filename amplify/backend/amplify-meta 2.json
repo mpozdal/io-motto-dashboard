@@ -1,0 +1,92 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-motto-staging-212314-authRole",
+      "UnauthRoleArn": "arn:aws:iam::072621353534:role/amplify-motto-staging-212314-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::072621353534:role/amplify-motto-staging-212314-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-motto-staging-212314-deployment",
+      "UnauthRoleName": "amplify-motto-staging-212314-unauthRole",
+      "StackName": "amplify-motto-staging-212314",
+      "StackId": "arn:aws:cloudformation:eu-north-1:072621353534:stack/amplify-motto-staging-212314/adb64d00-8b0f-11ee-9c83-0a39a43a540e",
+      "AmplifyAppId": "d2yy5uwefstf45"
+    }
+  },
+  "api": {
+    "motto": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDate": "2023-12-03T16:22:12.773Z",
+              "apiKeyExpirationDays": 7,
+              "description": ""
+            },
+            "authenticationType": "API_KEY"
+          }
+        },
+        "GraphQLAPIIdOutput": "fqyiteuofjedbnq7jblbktl5mu",
+        "GraphQLAPIEndpointOutput": "https://zzpaq44s4jegvl3wwetjcrmezy.appsync-api.eu-north-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-lrptpuwvynfkbci4lth2hwuhpq"
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync",
+      "lastPushTimeStamp": "2023-11-27T21:27:08.406Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-motto-staging-212314-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apimotto"
+      },
+      "lastPushDirHash": "5HYL6Op27UMQGenILLPbN1C+fHA="
+    }
+  },
+  "auth": {
+    "motto": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL",
+          "PREFERRED_USERNAME"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_UPPERCASE"
+          ]
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-motto-staging-212314-deployment/amplify-cfn-templates/auth/motto-cloudformation-template.json",
+        "logicalId": "authmotto"
+      },
+      "lastPushTimeStamp": "2023-11-27T21:27:08.409Z",
+      "output": {
+        "UserPoolId": "eu-north-1_0eU8BTEc6",
+        "AppClientIDWeb": "1hr64fq78m7lmaerlveamsi2tt",
+        "AppClientID": "c490pfcjm5kjfspsvr12ef67n",
+        "IdentityPoolId": "eu-north-1:5189772b-bbf4-4b6e-88ee-d11467cb4f7f",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-north-1:072621353534:userpool/eu-north-1_0eU8BTEc6",
+        "IdentityPoolName": "testAuthIdentityPool__staging",
+        "UserPoolName": "motto"
+      },
+      "lastPushDirHash": "pZnkJPpXhobUMiJxCVFvGmnduro="
+    }
+  }
+}
